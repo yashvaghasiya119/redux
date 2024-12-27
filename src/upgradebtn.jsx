@@ -28,7 +28,9 @@ function rendomsub(){
 function privacy(){
     dispatch({type:"privacy"})
 }
-
+function theme(){
+    dispatch({type:"change-theme"})
+}
 let [num,setnum]=useState("")
 
         return<>
@@ -40,5 +42,7 @@ let [num,setnum]=useState("")
         <input type="text" value={num} onChange={(e)=> setnum(e.target.value)}  />       
         <button onClick={rendomadd}>randomadd</button>
         <button onClick={rendomsub}>randomadd</button>
+        <br/>
+        <button onClick={theme}>Change theme</button>
          </>
     }

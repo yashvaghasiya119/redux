@@ -4,7 +4,8 @@ import { createStore } from "redux";
 
 let data= {
     counter:0,
-    privacy:false
+    privacy:false,
+    theme:true
 }
 
 let reduser = (state =data,action)=>{
@@ -28,6 +29,9 @@ let reduser = (state =data,action)=>{
     }
     else if (action.type === "privacy") {
         return { ...state, privacy:!state.privacy }
+    }
+    else if (action.type === "change-theme") {
+        return { ...state, theme:!state.theme }
     }
     return state
 }

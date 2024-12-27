@@ -81,4 +81,16 @@
     background-color: black;
   }
 
-  
+  /* theme color  */
+  .white{
+    width: 100vw;
+    height: 90vh;
+    color: black;
+    background-color: white;
+  }
+  .black{
+    width: 100vw;
+    height: 90vh;
+    color: white;
+    background-color: black;
+  }
